@@ -1,0 +1,45 @@
+<div class="exchange-details">
+    <div class="exchange-information">
+      <p class="check-information">Check information</p>
+      <h1>Select currencies and amount for exchange</h1>
+    </div>
+    <div class="input-field-three">
+      <span class="up-text-three">Recipient adress</span>
+      <span class="hyphen-three"></span>
+      <input type="text" placeholder="Enter you ETH wallet adress">
+    </div>
+    <div class="input-one-two">
+      <div class="input-field-one">
+        <span class="up-text-one">You send</span>
+        <span class="hyphen-one"></span>
+        <input type="text" value="1">
+
+
+        <mat-form-field>
+          <mat-label>Favorite food</mat-label>
+          <mat-select>
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+              {{food.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+      </div>
+      <div class="input-field-two">
+        <span class="up-text-two">You get</span>
+        <span class="hyphen-two"></span>
+        <input type="text">
+      </div>
+    </div>
+    <div class="checkbox-input">
+      <input type="checkbox" name="terms"><span class="terms">I agree with Terms and Policy</span>
+
+      <button class="btn-submit" (click)="goToNextFrame()">
+        <span>NEXT STEP</span>
+      </button>
+
+    </div>
+  
+</div>
+
